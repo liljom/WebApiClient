@@ -13,7 +13,7 @@ import java.util.List;
 public class WebApiApp {
 
     public static void main(String[] args) {
-
+//
 //        JobDealDAO jobDealDAO = new JobDealDAO();
 //        JobDAO jobDAO = new JobDAO();
 //        UserDAO userDAO = new UserDAO();
@@ -25,16 +25,17 @@ public class WebApiApp {
 //            Job job = jobDAO.get(jobDeal.getJobId());
 //            User user = userDAO.get(job.getUserID());
 //
-//            Invoice invoice = new Invoice();
-//            invoice.setAmount(job.getPrice());
-//            invoice.setCustomerName(user.getName());
+//            String userName = user.getName();
+//            double amount = job.getPrice();
+//            Invoice invoice = new Invoice(userName, amount);
 //
 //            invoicingUtil.doInvoice(invoice);
 //        });
 
         PostDAO postDAO = new PostDAO();
         Post post = postDAO.get(1);
-        System.out.println(post);
+        System.out.println(post + "\n");
+
         List<Post> posts = postDAO.getAllForUser(1);
         for (Post post1 : posts) {
             System.out.println(post1 + "\n");
