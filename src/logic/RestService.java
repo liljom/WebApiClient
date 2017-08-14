@@ -13,9 +13,6 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by liljom on 2017. 06. 05..
- */
 public class RestService {
 
     Gson gson = new Gson();

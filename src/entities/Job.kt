@@ -1,10 +1,7 @@
 package entities
 
-/**
- * Created by liljom on 2017. 06. 05..
- */
 data class Job(
-        var JobId: Int,
+        var Id: Int,
         var Title: String,
         var Description: String,
         var DateStart: String,
@@ -12,5 +9,9 @@ data class Job(
         var Hours: Int,
         var Price: Double,
         var CategoryId: Int,
-        var UserID: Int
+        var Status: String,
+        var CreatedBy: Int,
+        var UserID: Int,
+        var Longitude: String,
+        var Latitude: String
 )

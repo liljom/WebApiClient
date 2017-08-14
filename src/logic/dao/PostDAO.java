@@ -4,9 +4,6 @@ import entities.Post;
 import logic.RestService;
 import java.util.List;
 
-/**
- * Created by liljom on 2017. 06. 05..
- */
 public class PostDAO {
 
     private String url = "http://jsonplaceholder.typicode.com/posts";

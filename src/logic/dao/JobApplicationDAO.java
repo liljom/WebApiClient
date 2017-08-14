@@ -1,20 +1,17 @@
 package logic.dao;
 
-import entities.JobDeal;
+import entities.JobApplication;
 import logic.RestService;
 
 import java.util.List;
 
-/**
- * Created by liljom on 2017. 06. 01..
- */
-public class JobDealDAO {
+public class JobApplicationDAO {
 
     private String url = "http://evro0002examproject0517.azurewebsites.net/api/jobdeals";
     RestService restService = new RestService();
 
-    public List<JobDeal> getCompleted() {
+    public List<JobApplication> getCompleted() {
         String fullUrl = url + "?status=completed";
-        return restService.getList(JobDeal.class, fullUrl);
+        return restService.getList(JobApplication.class, fullUrl);
     }
 }
