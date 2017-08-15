@@ -1,16 +1,16 @@
 package logic.dao;
 
-import entities.User;
+import entities.UserDetail;
 import logic.RestService;
 
 public class UserDAO {
 
-    private String url = "http://evro0002examproject0517.azurewebsites.net/api/users";
+    private String url = "http://localhost:64848/api/user";
     RestService restService = new RestService();
 
-    public User get(int userID) {
+    public UserDetail get(int userID) {
 
-        String fullUrl = url + "/" + userID;
-        return restService.getSingle(User.class, fullUrl);
+        String fullUrl = url + "/details?userId=" + userID;
+        return restService.getSingle(UserDetail.class, fullUrl);
     }
 }
